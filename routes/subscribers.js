@@ -51,7 +51,7 @@ router.patch("/:id", getSubscriber, async (req, res) => {
 //Deleting one
 router.delete("/:id", getSubscriber, async (req, res) => {
   try {
-    await res.subscriber.remove();
+    await res.subscriber.deleteOne();
     res.json({ message: "Deleted subscriber." });
   } catch (err) {
     res.status(500).json({ message: err.message });

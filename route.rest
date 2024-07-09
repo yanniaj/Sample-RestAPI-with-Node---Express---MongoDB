@@ -2,7 +2,7 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/668d41186d004120f9dc1431
+GET http://localhost:3000/subscribers/668d4296d0689934ad01924c
 
 ###
 
@@ -10,10 +10,18 @@ POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-    "name": "User 3",
-    "subscribedToChannel": "Channel 3"
+    "name": "User 1",
+    "subscribedToChannel": "Channel 1"
 }
 
 ###
 
-DELETE http://localhost:3000/subscribers/668d41186d004120f9dc1431
+DELETE http://localhost:3000/subscribers/668d3660f78ffa86002835dd
+
+###
+PATCH http://localhost:3000/subscribers/668d4296d0689934ad01924c
+Content-Type: application/json
+
+{
+    "subscribedToChannel": "My channel 2.0"
+}
